@@ -1,0 +1,19 @@
+
+p { 
+    background-color: pink;
+    font-size: larger;
+}
+
+.cooler {
+    font-size: x-large;
+}
+
+.bigblue {
+    font-size: x-large;
+    color: blue;
+}
+
+.boldgreen { 
+    font-weight: bold;
+    background-color: green;
+}
