@@ -2,15 +2,20 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+* {
+  border: 1px solid pink;
+}
+
 body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
-.header {
+ .header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -25,6 +30,7 @@ body {
 }
 
 .logo {
+  margin: 10px;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -40,13 +46,20 @@ button {
 }
 
 a {
-  /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
 ul {
+  /* this only fixes links issue */
   display: flex;
-  gap: 10px;
+  gap: 16px;
   list-style-type: none;
 }
+
+.left, .right {
+  /* Without this things float off the center, buttons sit on the right side. */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+} 
