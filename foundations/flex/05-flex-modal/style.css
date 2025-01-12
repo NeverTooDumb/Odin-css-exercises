@@ -4,6 +4,9 @@ html, body {
   height: 100%;
 }
 
+/* *{
+  border: 1px dotted red;
+} */
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -15,11 +18,29 @@ body {
   justify-content: center;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: larger;
+  margin: 10px;
+
+}
+
+.text {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
 }
 
 .icon {
@@ -57,6 +78,7 @@ button {
 }
 
 button.continue {
+  margin-left: 10px;
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
